@@ -44,7 +44,7 @@ dbt-pipelines/
 ├── seeds/                # Sample CSV data files  
 ├── dbt_project.yml       # dbt configuration file  
 ├── README.md             # This file!  
-
+```
 
 ## 🛠️ Getting Started
 
@@ -88,6 +88,6 @@ mv ~/.dbt/profiles.yml dbt_pipelines
 ### Recommended VSCode Extensions
 
 - **[SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)**: A popular SQL extension for VSCode.
-- **[Power User for dbt](https://marketplace.visualstudio.com/items?itemName=evanfrawley.dbt-power-user)**: A VSCode extension for dbt users.
+- **[Power User for dbt](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user)**: A VSCode extension for dbt users.
 
 ---
