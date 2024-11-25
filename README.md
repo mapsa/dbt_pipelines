@@ -74,7 +74,6 @@ When prompted, select **DuckDB** as the database (option 1).
 
 You can keep the profiles file in the default location I recommend moving it to the `dbt_pipelines` folder to share it with your collaborators.
 
-```bash
 Next, move your `profiles.yml` file to the `dbt_pipelines` folder:
 
 ```bash
