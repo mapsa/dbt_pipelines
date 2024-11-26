@@ -3,11 +3,11 @@ with last_order as (
         customer,
         max(ordered_at) as last_order_date
     from
-        orders
+        raw__orders
     group by
         customer
 )
 
-SELECT * FROM customers
+SELECT * FROM raw__customers
 LEFT JOIN last_order
-ON customers.id = last_order.customer
+ON raw__customers.id = last_order.customer

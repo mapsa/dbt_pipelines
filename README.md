@@ -90,6 +90,26 @@ __Note:__  The `dbt seed` command is designed for loading small, static datasets
 
 The dataset used in this demo is sourced from the dbt demo repository, [Jaffle Shop](https://github.com/dbt-labs/jaffle-shop/tree/main/jaffle-data), a commonly used example for dbt projects.
 
+Check if the data was loaded:
+
+```bash
+dbt seed
+duckdb dev.duckdb "SELECT * from customers"
+```
+
+## 📊 Data Models
+
+More commands in the [Syntax Overview section](https://docs.getdbt.com/reference/node-selection/syntax).
+| Command                         | Description                                                    |
+|---------------------------------|----------------------------------------------------------------|
+| `dbt run`                       | Run all models in the project.                                |
+| `dbt run --select model_name`   | Run a specific model (e.g., `staging__customers`).            |
+| `dbt build`                     | Build models, run tests, and execute snapshots.               |
+| `dbt test`                      | Run tests to validate data quality.                           |
+| `dbt docs generate`             | Generate project documentation with a lineage graph.          |
+| `dbt docs serve`                | Serve the documentation locally for interactive exploration.  |
+
+
 ## 👩‍💻 Developer Notes
 
 ### Recommended VSCode Extensions
