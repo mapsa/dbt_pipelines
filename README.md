@@ -82,6 +82,14 @@ mv ~/.dbt/profiles.yml dbt_pipelines
 
 ---
 
+## 📦 Load your data
+
+While dbt typically requires a database as its starting point, for this demo, we’ll use CSV files as our data source. To load this data into the database, we’ll use the `dbt seed` command, which is a simple way to populate a database.
+
+__Note:__  The `dbt seed` command is designed for loading small, static datasets, such as configuration tables or test data. It is not intended for frequently changing or dynamic data.
+
+The dataset used in this demo is sourced from the dbt demo repository, [Jaffle Shop](https://github.com/dbt-labs/jaffle-shop/tree/main/jaffle-data), a commonly used example for dbt projects.
+
 ## 👩‍💻 Developer Notes
 
 ### Recommended VSCode Extensions
