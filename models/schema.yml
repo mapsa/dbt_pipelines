@@ -1,0 +1,22 @@
+models:
+  - name: customers
+    columns:
+      - name: customer_id
+        data_tests:
+          - not_null
+  - name: staging__customers
+    columns:
+      - name: id
+        description: The unique identifier for each customer in the raw__customers table.
+        data_type: varchar
+        data_tests:
+          - unique
+      - name: name
+        description: The name of the customer in the raw__customers table.
+        data_type: varchar
+      - name: customer
+        description: The unique identifier for each customer in the last_order table, which is derived from the raw__orders table.
+        data_type: varchar
+      - name: last_order_date
+        description: This column represents the date of the most recent order placed by the customer. It is derived from the 'ordered_at' column in the 'raw__orders' table, where the maximum (latest) date is selected for each customer.
+        data_type: timestamp
