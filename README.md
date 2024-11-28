@@ -32,6 +32,8 @@ This repository is designed for data scientists looking to get hands-on experien
 - Performing **aggregations** to prepare data for analysis.
 - How to use the **Power User for dbt** extension
 
+Use this link to access a Live Share Session: https://prod.liveshare.vsengsaas.visualstudio.com/join?1F4DD79FD3F2AF13BB9820A45FB085163110
+
 ---
 
 ## 📂 Repository Structure  
