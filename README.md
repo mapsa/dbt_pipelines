@@ -59,6 +59,7 @@ pip install uv
 Then, install the project dependencies:
 
 ```bash
+uv venv
 uv pip install -r requirements.txt
 ```
 
